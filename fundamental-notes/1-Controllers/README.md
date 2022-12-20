@@ -52,3 +52,12 @@ export class CatsController {
 }
 
 ```
+
+<b>Pattern based routes are supported as well. For instance, the asterisk is used as a wildcard, and will match any combination of characters.</b>
+
+```
+@Get('ab*cd')
+findAll() {
+  return 'This route uses a wildcard';
+}
+```
